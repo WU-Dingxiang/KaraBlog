@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>校园卡查询系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/static/img/favicon.ico"
+	type="image/x-icon" />
+
+<!-- 2016-4-1 21:57:12 功能：添加CSS -->
+<link rel="stylesheet" href="/static/css/user_login.css" type="text/css" />
+<!-- ************************* -->
+
+<script type="text/javascript" src="/static/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/static/js/user_login.js"></script>
+</head>
+<body id="homefirst">
+	<div id="wrapper">
+		<div id="header_index"></div>
+		<div id="main">
+			<form action="/karablog/user_login" method="post">
+				<table>
+					<tr>
+						<td>账号</td>
+						<td><input type="text" name="inputUsername" /></td>
+					</tr>
+					<tr>
+						<td>密码</td>
+						<td><input type="password" name="inputPassword" /></td>
+					</tr>
+					<tr>
+						<td>验证码</td>
+						<td><input type="text" name="captcha" /></td>
+						<td><img id="imgCaptcha" alt="验证码" src="/karablog/getCaptcha"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="登 入" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<!-- 2016-4-1 21:57:12 功能：修改文字 -->
+		<div id="footer">
+			<div id="copyright">©2016 中南大学铁路信息技术工程研究所 版权所有</div>
+			<div id="contact">联系方式：wdx2014@mail.csu.edu.cn</div>
+		</div>
+		<!-- ************************* -->
+
+	</div>
+</body>
+</html>
