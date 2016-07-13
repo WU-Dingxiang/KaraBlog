@@ -1,3 +1,3 @@
-# KaraBlog Personal Blog Website by Java
+# KaraBlog - A Personal Blog Website by Java
 
-The KaraFM personal blog website makes it easier to buidl a blog for yourself.
+The KaraBlog personal blog website makes it easier to buidl a blog for yourself.
