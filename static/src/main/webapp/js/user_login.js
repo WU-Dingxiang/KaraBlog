@@ -78,7 +78,7 @@ $(document).ready(function() {
 	});
 	// 刷新验证码
 	$("#imgCaptcha").click(function() {
-		$(this).attr("src", "/karablog/getCaptcha?"+Math.random());
+		$(this).attr("src", "/blog-web/getCaptcha?"+Math.random());
 	});
 	// ----------------------- 直接执行！-----------------------
 	// 设置焦点

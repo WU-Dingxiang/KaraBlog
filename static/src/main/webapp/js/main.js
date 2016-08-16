@@ -30,10 +30,10 @@ $(document).ready(function() {
 				
 				{ // 2016-4-1 20:35:17 ********************
 					// 功能1：进入新界面立即刷新验证码
-					$("table img#captcha").attr("src", "/karablog/getCaptcha?"+Math.random());
+					$("table img#captcha").attr("src", "/blog-web/getCaptcha?"+Math.random());
 					// 功能2：动态绑定验证码点击刷新
 					$("table img#captcha").click(function() {
-						$(this).attr("src", "/karablog/getCaptcha?"+Math.random());
+						$(this).attr("src", "/blog-web/getCaptcha?"+Math.random());
 					});					
 				} // **************************************
 			}
@@ -75,7 +75,7 @@ $(document).ready(function() {
 		goLogPage : function(_pageIndex) {
 			if (htmlSelected != 2 || pageSelected != _pageIndex) {
 				pageSelected = _pageIndex;
-				$.post("/karablog/seeLog", {
+				$.post("/blog-web/seeLog", {
 					pageIndex : _pageIndex
 				}, function(data, status) {
 					$.getDisplay(data, status);
@@ -90,7 +90,7 @@ $(document).ready(function() {
 		goWaterPage : function(_pageIndex) {
 			if (htmlSelected != 4 || pageSelected != _pageIndex) {
 				pageSelected = _pageIndex;
-				$.post("/karablog/seeWater", {
+				$.post("/blog-web/seeWater", {
 					pageIndex : _pageIndex
 				}, function(data, status) {
 					$.getDisplay(data, status);
@@ -104,7 +104,7 @@ $(document).ready(function() {
 	$.extend({
 		goHtml : function(htmlIndex, htmlName) {
 			if (htmlSelected != htmlIndex) {
-				$.post("/karablog/getHtml", {
+				$.post("/blog-web/getHtml", {
 					htmlName : htmlName
 				}, function(data, status) {
 					$.getDisplay(data, status);
@@ -148,8 +148,8 @@ $(document).ready(function() {
 	});
 	// 退出
 	$("li#exit").click(function() {
-		$.post("/karablog/user_logout", function() {
-			location.href = "/karablog";
+		$.post("/blog-web/user_logout", function() {
+			location.href = "/blog-web";
 		});
 	});
 	// 导航栏:选中时

@@ -5,27 +5,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>top.karablog</groupId>
-		<artifactId>kara</artifactId>
+		<groupId>top.kara</groupId>
+		<artifactId>blog</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>static</artifactId>
 	<packaging>war</packaging>
-
-	<repositories>
-		<repository>
-			<id>repo-mirror</id>
-			<url>http://maven.net.cn/content/groups/public/</url>
-		</repository>
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>plugin-repo-mirror</id>
-			<url>http://maven.net.cn/content/groups/public/</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<build>
 		<plugins>
