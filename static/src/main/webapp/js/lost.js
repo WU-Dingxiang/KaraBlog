@@ -5,7 +5,7 @@
 	$("table#lost input#captcha").val("");
 	$("table#lost input#password").val("");
 	$("table#lost input#password").focus();
-	$.post("/karablog/lost", {
+	$.post("/blog-web/lost", {
 		captcha : captcha,
 		password : password
 	}, function(data, status) {
@@ -16,7 +16,7 @@
 		}
 		
 		{ // 2016-4-1 20:27:46 功能：提交时刷新验证码
-			$("table#lost img#captcha").attr("src", "/karablog/getCaptcha?"+Math.random());
+			$("table#lost img#captcha").attr("src", "/blog-web/getCaptcha?"+Math.random());
 		} // *****************************************
 	});
 }
@@ -32,7 +32,7 @@ function changeSubmit() {
 	$("table#change input#newpassword").val("");
 	$("table#change input#repassword").val("");
 	$("table#change input#curpassword").focus();
-	$.post("/karablog/change", {
+	$.post("/blog-web/change", {
 		captcha : captcha,
 		curpassword : curpassword,
 		newpassword : newpassword,
@@ -45,7 +45,7 @@ function changeSubmit() {
 		}
 		
 		{ // 2016-4-1 20:27:46 功能：提交时刷新验证码
-			$("table#change img#captcha").attr("src", "/karablog/getCaptcha?"+Math.random());
+			$("table#change img#captcha").attr("src", "/blog-web/getCaptcha?"+Math.random());
 		} // *****************************************
 	});
 }
@@ -63,7 +63,7 @@ function pickup() {
 	$("table#pickup input#name").val("");
 	$("table#pickup input#cardid").val("");
 	$("table#pickup input#school").focus();
-	$.post("/karablog/pickup", {
+	$.post("/blog-web/pickup", {
 		captcha : captcha,
 		school : school,
 		stuid : stuid,
@@ -77,7 +77,7 @@ function pickup() {
 		}
 		
 		{ // 2016-4-1 20:27:46 功能：提交时刷新验证码 *********************
-			$("table#pickup img#captcha").attr("src", "/karablog/getCaptcha?"+Math.random());
+			$("table#pickup img#captcha").attr("src", "/blog-web/getCaptcha?"+Math.random());
 		} // *******************************************************
 	});
 }

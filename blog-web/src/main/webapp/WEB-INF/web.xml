@@ -11,7 +11,7 @@
 	<!-- 用户登入 -->
 	<servlet>
 		<servlet-name>UserLoginServlet</servlet-name>
-		<servlet-class>top.karablog.controller.UserLoginServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.UserLoginServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>UserLoginServlet</servlet-name>
@@ -25,7 +25,7 @@
 	<!-- 用户登入 : 获取验证码 -->
 	<servlet>
 		<servlet-name>CaptchaServlet</servlet-name>
-		<servlet-class>top.karablog.controller.CaptchaServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.CaptchaServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>CaptchaServlet</servlet-name>
@@ -35,7 +35,7 @@
 	<!-- 获取页面 -->
 	<servlet>
 		<servlet-name>GetHtmlServlet</servlet-name>
-		<servlet-class>top.karablog.controller.GetHtmlServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.GetHtmlServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>GetHtmlServlet</servlet-name>
@@ -45,7 +45,7 @@
 	<!-- 获取页面 -->
 	<servlet>
 		<servlet-name>UserLogoutServlet</servlet-name>
-		<servlet-class>top.karablog.controller.UserLogoutServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.UserLogoutServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>UserLogoutServlet</servlet-name>
@@ -55,7 +55,7 @@
 	<!-- 交易记录 -->
 	<servlet>
 		<servlet-name>SeeLogServlet</servlet-name>
-		<servlet-class>top.karablog.controller.SeeLogServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.SeeLogServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SeeLogServlet</servlet-name>
@@ -65,7 +65,7 @@
 	<!-- 水控记录 -->
 	<servlet>
 		<servlet-name>SeeWaterServlet</servlet-name>
-		<servlet-class>top.karablog.controller.SeeWaterServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.SeeWaterServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SeeWaterServlet</servlet-name>
@@ -75,7 +75,7 @@
 	<!-- 校园卡挂失 -->
 	<servlet>
 		<servlet-name>LostServlet</servlet-name>
-		<servlet-class>top.karablog.controller.LostServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.LostServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LostServlet</servlet-name>
@@ -85,7 +85,7 @@
 	<!-- 修改查询密码 -->
 	<servlet>
 		<servlet-name>ChangeServlet</servlet-name>
-		<servlet-class>top.karablog.controller.ChangeServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.ChangeServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ChangeServlet</servlet-name>
@@ -95,7 +95,7 @@
 	<!-- 拾获校园卡-->
 	<servlet>
 		<servlet-name>PickupServlet</servlet-name>
-		<servlet-class>top.karablog.controller.PickupServlet</servlet-class>
+		<servlet-class>top.kara.blog.controller.PickupServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>PickupServlet</servlet-name>

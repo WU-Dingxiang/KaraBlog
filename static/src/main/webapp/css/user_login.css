@@ -21,7 +21,10 @@ div#wrapper {
 
 div#header_index {
 	height: 134px;
-	background-image: url("/static/img/logo.jpg");
+	background: url(/static/img/logo.jpg);
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%; /* 老版本的 Firefox */
+	background-repeat: no-repeat;
 }
 
 table {
@@ -36,21 +39,21 @@ table td input {
 	border-width: 2px;
 }
 
-table td input[type="text"],input[type="password"] {
-	border-style:inset;
-	margin:5px 10px;
+table td input[type="text"], input[type="password"] {
+	border-style: inset;
+	margin: 5px 10px;
 }
 
 table td input[type="submit"] {
-	border-style:outset;
-	margin:10px 10px;
+	border-style: outset;
+	margin: 10px 10px;
 	width: 80px;
 }
 
 div#footer {
 	margin-top: 30px;
 	margin-bottom: 10px;
-	background-color: #EFEFEF;
+	background-color: #F5FAF5;
 	padding: 10px;
 }
 

@@ -22,6 +22,9 @@ div#wrapper {
 div#header_index {
 	height: 134px;
 	background-image: url("/static/img/logo.jpg");
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%; /* 老版本的 Firefox */
+	background-repeat: no-repeat;
 }
 
 div#navfirst {
@@ -42,7 +45,7 @@ div#navfirst ul#menu li {
 div#footer {
 	margin-top: 30px;
 	margin-bottom: 10px;
-	background-color: #EFEFEF;
+	background-color: #EFFFEF;
 	padding: 10px;
 }
 
